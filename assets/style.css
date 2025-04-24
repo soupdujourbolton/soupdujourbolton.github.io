@@ -1,0 +1,816 @@
+body {
+  position: relative; /* Important for positioning the pseudo-element */
+}
+
+body::before {
+  content: "";
+  position: fixed; /* Or absolute, depending on your desired effect */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/bkgd.gif);
+  background-repeat: repeat; /* Adjust as needed */
+  background-size: auto; /* Adjust as needed */
+  opacity: 0.7; /* Adjust the transparency level here */
+  z-index: -99999; /* Ensures it's behind the body content */
+}
+
+footer {
+  text-align: center;
+  margin-top: 5%;
+  font-family: "Meera Inimai", sans-serif;
+  font-weight: 500;
+  color: #826541;
+  font-style: normal;
+  font-size: 0.8rem;
+}
+
+#menuIco {
+  cursor: pointer;
+}
+
+#navBar {
+  background-color: #d4df72;
+  padding: 2%;
+  margin-left: -2%;
+  margin-top: -2%;
+  width: 98.65%;
+}
+
+svg {
+  margin-top: 1%;
+  margin-left: 0.5%;
+  z-index: 999999;
+}
+
+#links {
+  margin-left: 3%;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+
+  font-family: "Meera Inimai", sans-serif;
+}
+.link:hover {
+  text-decoration: none;
+
+  font-family: "Meera Inimai", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-style: normal;
+}
+
+a img {
+  text-decoration: none;
+}
+
+#close {
+  align-items: center;
+}
+
+#logo {
+  display: block; /* Make the image a block element */
+  margin-left: auto;
+  margin-right: auto; /* Horizontal centering */
+  width: 15%; /* Adjust the width as needed */
+  height: auto;
+  margin-top: -5%;
+}
+
+#open {
+  display: none;
+}
+
+.title {
+  font-family: "Meera Inimai", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+  margin-top: 5%;
+}
+
+#healthy {
+  font-size: 1.3rem;
+  color: #826541;
+}
+
+.par {
+  font-family: "Meera Inimai", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  color: #826541;
+  margin-top: 2%;
+  width: 40%;
+  letter-spacing: 0.75px;
+}
+
+#homePicDesk {
+  float: right;
+  width: 32%;
+  margin-top: -22%;
+  margin-right: 8%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px #888888;
+}
+
+#main {
+  margin-left: 5%;
+}
+
+#socials {
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+  margin-right: 15%;
+}
+
+.socialTag {
+  margin-right: 25px;
+  font-family: "Meera Inimai", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  width: 100px;
+}
+
+#socials img {
+  width: 70px;
+  height: 65px;
+  margin-right: 10px;
+}
+
+#socials img:hover {
+  width: 80px;
+  height: 75px;
+  margin-right: 10px;
+}
+
+#homePicMobile {
+  display: none; /* change this to block for mobile screens */
+}
+
+#aboutTitle {
+  margin-top: -0.75%;
+  width: 35%;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+#operation {
+  float: right;
+  margin-right: 8%;
+}
+
+#hours {
+  width: 100%;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-right: 105%;
+  margin-top: -30%;
+  font-weight: 700;
+}
+
+#aboutPar {
+  margin-left: 5%;
+}
+
+#ctaMenu {
+  width: 130%;
+  margin-left: -15%;
+  border-radius: 20px;
+  background-color: black;
+  color: #d4df72;
+  font-family: "Meera Inimai", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  padding: 2%;
+  border-style: none;
+}
+
+#ctaMenu:hover {
+  width: 130%;
+  margin-left: -15%;
+  border-radius: 20px;
+  background-color: #d4df72;
+  color: black;
+  font-family: "Meera Inimai", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  padding: 2%;
+  border-style: none;
+}
+
+#aboutImg {
+  width: 20%;
+  float: right;
+  margin-top: -22%;
+  margin-right: 7%;
+  border-radius: 15px;
+  border-style: none;
+  box-shadow: 5px 5px 10px #888888;
+}
+
+#photos {
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap; /* Allows images to wrap to the next line if they don't fit */
+  justify-content: center; /* Centers images horizontally */
+  gap: 10px; /* Adds spacing between images */
+  margin-left: -5px;
+}
+
+.imgs {
+  border-radius: 10px;
+  max-width: 30%;
+  border: 1px none #cccccc00;
+  box-sizing: border-box;
+  height: 150px; /* Set a fixed height if needed */
+  object-fit: cover; /* Maintain aspect ratio, may crop */
+  box-shadow: 5px 5px 10px #88888897;
+}
+
+.socials2 {
+  margin-left: 32%;
+}
+
+#socialTag2 {
+  width: 30%;
+  text-align: center;
+}
+
+#icon-container:hover svg {
+  width: 30px;
+  height: 30px;
+  fill: white;
+}
+
+#ast {
+  list-style-type: "* ";
+}
+
+#menus {
+  font-family: "Meera Inimai", sans-serif;
+  width: 90%;
+  font-style: normal;
+  font-size: 1rem;
+  color: #000000;
+  margin-top: 2%;
+  letter-spacing: 0.75px;
+  background-color: #8265413a;
+  padding: 2%;
+  border-radius: 15px;
+  column-count: 2;
+  text-indent: -20px; /* Negative indent to pull the bullet point out */
+  padding-left: 20px; /* Positive padding to indent the text */
+}
+
+#menus li {
+  text-indent: -20px; /* Negative indent to pull the bullet point out */
+  padding-left: 20px; /* Positive padding to indent the text */
+}
+
+#menus p {
+  text-indent: -20px; /* Negative indent to pull the bullet point out */
+  padding-left: 20px; /* Positive padding to indent the text */
+}
+
+#menu1 {
+  break-inside: avoid;
+  padding: 5%;
+  border-right: 2px solid #826541; /* Adjust thickness and color as needed */
+}
+
+#menu2 {
+  margin-top: 5%;
+  break-inside: avoid;
+  padding: 5%;
+}
+
+#menu2 img {
+  margin-top: 25%;
+}
+
+#centreButton {
+  display: flex;
+  align-items: center;
+}
+
+#ctaContact {
+  margin-top: 5%;
+  margin-left: 20%;
+  width: 50%;
+  border-radius: 20px;
+  background-color: #d4df72;
+  color: black;
+  font-family: "Meera Inimai", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  padding: 1%;
+  border-style: none;
+}
+
+#ctaContact:hover {
+  color: #d4df72;
+  background-color: black;
+}
+
+.line-with-text {
+  display: flex;
+  align-items: center; /* Vertically align the text with the lines */
+  width: 100%; /* Make it span the page width */
+  margin-top: 7%;
+}
+
+.line-with-text h2 {
+  margin-top: 0;
+  margin: 0; /* Remove default heading margins */
+  padding: 0 20px; /* Add some horizontal padding around the text */
+  color: black; /* Style the text */
+  font-size: 1.5em; /* Adjust font size */
+  white-space: nowrap; /* Prevent text from wrapping */
+  font-weight: 600;
+  font-family: "Meera Inimai", sans-serif;
+}
+
+.line-with-text::before,
+.line-with-text::after {
+  content: "";
+  flex-grow: 1; /* Make the lines expand to fill available space */
+  height: 2px; /* Adjust line thickness */
+  background-color: black; /* Style the line color */
+  font-weight: 600;
+  font-family: "Meera Inimai", sans-serif;
+}
+
+#promotions {
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap; /* Allows images to wrap to the next line if they don't fit */
+  justify-content: center; /* Centers images horizontally */
+  gap: 30px; /* Adds spacing between images */
+  margin-left: -5px;
+  color: #826541;
+}
+
+#promotion #up {
+  width: 40%;
+  text-indent: -20px; /* Negative indent to pull the bullet point out */
+  padding-left: 20px; /* Positive padding to indent the text */
+}
+
+#promotion p {
+  color: black;
+  font-weight: 600;
+  font-family: "Meera Inimai", sans-serif;
+}
+
+#promotion li {
+  color: black;
+  font-family: "Meera Inimai", sans-serif;
+  font-size: 0.9rem;
+  text-indent: -20px; /* Negative indent to pull the bullet point out */
+  padding-left: 20px; /* Positive padding to indent the text */
+}
+
+#promotion img {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin-right: 10%;
+  margin-top: 2%;
+  border-radius: 15px;
+}
+
+#button-container {
+  display: flex;
+  align-items: center;
+}
+
+#ctaContactPromo {
+  margin-top: 5%;
+  display: block;
+  margin-left: 22%;
+  width: 50%;
+  border-radius: 20px;
+  color: #d4df72;
+  background-color: black;
+  font-family: "Meera Inimai", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  padding: 1%;
+  border-style: none;
+}
+
+#ctaContactPromo:hover {
+  background-color: #d4df72;
+  color: black;
+}
+
+#mainContact {
+  font-family: "Meera Inimai", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  color: #826541;
+  margin-top: 3%;
+  width: 40%;
+  letter-spacing: 0.75px;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
+#mainContact .title {
+  font-family: "Meera Inimai", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+  margin-top: 5%;
+  color: black;
+}
+
+#storePic {
+  float: right;
+  width: 30%;
+  margin-right: 12%;
+}
+
+@media screen and (max-width: 1024px) {
+  #navBar {
+    width: 98%;
+    margin: 0;
+    padding: 5%;
+    margin-left: -3%;
+
+    position: sticky;
+    z-index: -100000;
+  }
+
+  #links {
+    margin-left: 5%;
+    text-align: left;
+  }
+
+  .link {
+    font-size: 1rem;
+  }
+
+  #logo {
+    width: 40%;
+
+    z-index: 99999999;
+  }
+
+  #homePicDesk {
+    display: none;
+  }
+
+  #homePicMobile {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+
+  .par {
+    width: 90%;
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 2%;
+  }
+
+  #socials {
+    column-count: 3;
+    align-items: center;
+    margin-right: 0;
+    margin-bottom: 13%;
+  }
+
+  #socials img {
+    width: 50px;
+    height: 50px;
+  }
+
+  #aboutTitle {
+    width: 80%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  #aboutImg {
+    width: 80%;
+    float: none;
+    margin: 10px auto;
+    display: block;
+  }
+
+  #ctaMenu {
+    width: 100%;
+    margin: 10px auto;
+    font-size: 1rem;
+    padding: 3%;
+  }
+
+  #photos {
+    display: flex;
+    flex-wrap: wrap; /* Allows images to wrap */
+    justify-content: center; /* Centers the images */
+    gap: 10px; /* Adds spacing between images */
+  }
+
+  #photos img:nth-child(3n + 1) {
+    width: 250px; /* Or your desired larger width */
+  }
+
+  #photos img:nth-child(3n + 2) {
+    width: 150px; /* Or your desired smaller width */
+  }
+  .imgs {
+    max-width: 48%; /* Each image takes close to half the container width */
+    height: auto;
+    object-fit: cover;
+  }
+
+  #leftPic {
+    margin-left: 5%;
+  }
+
+  #chiliPic {
+    margin-left: 35%;
+  }
+
+  #storePic {
+    width: 80%;
+    float: none;
+    margin: 10px auto;
+    display: block;
+  }
+
+  #menus {
+    column-count: 1;
+    width: 90%;
+    padding: 5%;
+  }
+
+  #menu1 {
+    border: none;
+  }
+
+  #ctaContact,
+  #ctaContactPromo {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  #ctaContact {
+    width: 103%;
+    font-size: 0.9rem;
+    margin-left: -4%;
+    padding: 2%;
+    letter-spacing: 0.5px;
+  }
+
+  #ctaContactPromo {
+    width: 103%;
+    font-size: 0.9rem;
+    margin-left: -4%;
+    padding: 2%;
+    letter-spacing: 0.5px;
+    margin-bottom: 5%;
+  }
+
+  #mainContact {
+    width: 90%;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  #aboutTitle {
+    text-align: left;
+  }
+
+  #hours {
+    display: block;
+    text-align: left;
+    margin-right: 1px;
+    text-align: center;
+    margin-top: 2%;
+  }
+  #operation {
+    margin-right: 20%;
+    text-align: center;
+  }
+  #aboutPar {
+    margin-top: 30%;
+  }
+
+  .socials2 {
+    margin-left: 15%;
+  }
+
+  #socialTag2 {
+    align-items: center;
+    margin-left: -15%;
+    width: 55%;
+    margin-top: 5%;
+  }
+
+  #promotion #up {
+    width: 70%;
+  }
+
+  .platter {
+    display: flex; /* Make the container a flex container */
+    align-items: flex-start; /* Align items to the top */
+    margin-bottom: 20px; /* Optional: Spacing between platters */
+    border: 1px solid #ccc; /* Optional: To visually see the container */
+    /* Optional: Add some padding inside the container */
+  }
+
+  #wrapPlatter {
+    flex: 1; /* Allow image to take up available space */
+    max-width: 40%; /* Limit image width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between image and text */
+    display: block; /* Prevent inline spacing issues */
+    border-radius: 8px; /* Optional: Rounded corners for the image */
+  }
+
+  .platter > * {
+    /* Select direct children of .platter */
+    margin-top: 0; /* Remove default top margins for better alignment */
+  }
+
+  .platter > h1,
+  .platter > p,
+  .platter > ul,
+  .platter > b {
+    flex: 1; /* Allow text elements to share remaining space */
+    max-width: 60%; /* Limit text width */
+  }
+
+  .platter ul {
+    /* Target the ul within .platter */
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Remove default left padding */
+  }
+
+  /* If the lines are still there, check for borders on li elements */
+  /*
+  .platter li {
+    border: none; !* Or remove the specific border property causing the lines *!
+  }
+  */
+
+  /* Optional: Adjust for smaller screens to stack image and text */
+  @media (max-width: 768px) {
+    .platter {
+      flex-direction: column; /* Stack items vertically */
+      align-items: left; /* Center items horizontally */
+      text-align: left; /* Center text */
+      border: none;
+    }
+
+    .platter img {
+      margin-left: 20%;
+    }
+
+    #wrapPlatter {
+      max-width: 90%;
+
+      margin-bottom: 15px;
+    }
+
+    .platter > h1,
+    .platter > p,
+    .platter > ul,
+    .platter > b {
+      max-width: 80%;
+      text-align: left; /* Align text to the left when stacked */
+    }
+
+    .platter > ul {
+      text-align: left; /* Align list to the left when stacked */
+    }
+  }
+  .contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Ensures text stays on the right */
+    gap: 40px; /* Adjust spacing */
+    max-width: 900px; /* Keeps the section structured */
+    margin: auto; /* Centers the section */
+  }
+
+  #storePic {
+    width: 60%;
+    display: flex;
+    margin-top: 95%;
+    border-radius: 10px;
+
+    margin-left: 5%;
+  }
+
+  #mainContact {
+    flex: 1; /* Takes up remaining space */
+    font-family: sans-serif;
+    text-align: left;
+    margin-top: 2%;
+    margin-left: -15%;
+  }
+
+  #mainContact h1,
+  #mainContact p {
+    width: 100%; /* Ensures it spans the full width */
+    margin-left: -140%;
+    width: 200%;
+  }
+  #mainContact h1 {
+    margin-left: -150%;
+  }
+  .contactSocials {
+    flex-direction: column;
+  }
+
+  .contactSocials img {
+    margin-top: 50%;
+    margin-left: 10%;
+  }
+
+  body {
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+  }
+
+  main {
+    flex-grow: 1; /* Allows the main content to expand and push the footer down */
+  }
+
+  footer {
+    padding: 4px;
+    text-align: center;
+  }
+  #top {
+    width: 98%;
+    margin: 0;
+
+    margin-left: -1%; /* Adjusted margin-left to align with the adjusted width and padding */
+    margin-top: -1%; /* Adjusted margin-top to align with the adjusted padding */
+    position: fixed; /* Make the navbar stick to the viewport */
+    top: 0; /* Stick it to the top of the viewport */
+    left: 0; /* Stick it to the left edge of the viewport */
+    z-index: 1000; /* Ensure it stays on top of other content */
+    margin-bottom: 50%;
+  }
+
+  #links {
+    margin-left: 5%;
+    text-align: left;
+  }
+
+  .link {
+    font-size: 1rem;
+  }
+
+  #logo {
+    width: 40%;
+    margin-top: -10%;
+    max-width: fit-content;
+    position: relative;
+  }
+  #main {
+    margin-top: 50%;
+  }
+  #menuIco {
+    size: larger;
+    padding: 2%;
+  }
+
+  #menuImgs {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-around; /* Distribute space evenly around items */
+  }
+
+  .imgs {
+    width: calc(
+      50% - 10px
+    ); /* Make each image take up roughly half the container width, with some spacing */
+    margin-bottom: 0px; /* Add a little space between the rows */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+
+  /* Optional: Adjust for smaller screens to prevent images from getting too small */
+}
