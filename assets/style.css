@@ -452,6 +452,10 @@ a img {
   display: none;
 }
 
+#menuSidePics {
+  display: none;
+}
+
 @media screen and (max-width: 1024px) {
   #navBar {
     width: 98%;
@@ -937,8 +941,9 @@ a img {
   }
 
   #menuSidePics {
+    display: block;
     break-inside: avoid;
-    width: 150px;
+    width: 140px;
     z-index: -99999;
   }
 
@@ -948,7 +953,7 @@ a img {
 
   .sidepic {
     width: 170px;
-    margin-left: 20%;
+    margin-left: 12%;
   }
 
   .centreButton {
