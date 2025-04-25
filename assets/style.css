@@ -909,4 +909,18 @@ a img {
   #menuImgs {
     display: none;
   }
+   #mPic1:nth-child(even) {
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  /* Style for the first, third, fifth, etc. .menuPic images */
+  #mPic1:nth-child(odd) {
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
 }
